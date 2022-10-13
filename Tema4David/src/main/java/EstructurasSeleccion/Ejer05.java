@@ -57,8 +57,7 @@ public class Ejer05 {
                 // Mostramos el resultado
                 System.out.println("El area del triangulo es: " + areaTriangulo);
             
-        	} 
-	else { 
+        	} else { 
 		if (opcion == 3) {
             	System.out.println("Ha seleccionado calcular el área de un círculo...");
                 Scanner teclado3 = new Scanner(System.in);
