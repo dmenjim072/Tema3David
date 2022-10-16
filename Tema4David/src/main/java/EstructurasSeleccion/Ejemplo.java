@@ -40,14 +40,15 @@ public class Ejemplo {
             // Posicion donde esta la letra
             int posicion = nombre.indexOf(letraBuscar);
             System.out.println("La posicion es " + posicion);
-        }   else {
-            if (nombre.length()) % 2 == 0 {  // Si el numero de letras del String es par
-               System.out.println("El numero de caracteres es par");
-        
-        }   else {
+        }   
+            else {
+                if (nombre.length()) % 2 == 0 {  // Si el numero de letras del String es par
+                System.out.println("El numero de caracteres es par");
+            }  
+            else {
                 System.out.println("El numero de caracteres es impar");
                 }            
         System.out.println("Adios");
     }
-    
+    }
 }
