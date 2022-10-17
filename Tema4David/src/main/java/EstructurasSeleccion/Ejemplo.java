@@ -42,7 +42,7 @@ public class Ejemplo {
             System.out.println("La posicion es " + posicion);
         }   
             else {
-                if (nombre.length()) % 2 == 0 {  // Si el numero de letras del String es par
+                if (nombre.length() % 2 == 0) {  // Si el numero de letras del String es par
                 System.out.println("El numero de caracteres es par");
             }  
             else {
