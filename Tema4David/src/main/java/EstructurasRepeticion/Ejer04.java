@@ -14,7 +14,7 @@ public class Ejer04 {
         
         int numero = 1;
          
-        // Primero hace un bucle con una variable numero valor 1 hasta que llegue
+        // Primero hace un bucle con una variable int valor 1 hasta que llegue
         // a 11 (de uno en uno)
           while (numero < 11)
           {
