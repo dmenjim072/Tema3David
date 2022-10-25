@@ -17,24 +17,29 @@ public class NumerosRomanos {
         // Declaramos variables
         int opcion;
         
+        // Hacemos un do-while 
+        do{
         // Pedimos con un JOption que el usuario elija una opcion dentro del menu
         String opcionString = JOptionPane.showInputDialog("Elija una opcion: \n"
                 + "1.- Traductor numeros romanos \n"
                 + "2.- Contador de vocales \n"
                 + "3.- Salir");
         
-        // Pasamos la variable"opcion de String a int
+        // Pasamos la variable opcion de String a int
         opcion = Integer.parseInt(opcionString);
         
-        
-        if (opcion==1){
+        // Hacemos un switch con cada opcion del menu
+        // Opcion 1 (Pedimos un numero decimal y lo convertimos en numero romano)
+        switch (opcion){
+            case 1:
             
                 int numero;
                 String numeroString = JOptionPane.showInputDialog("Introduce el"
                         + "numero a convertir (del 1 al 10):  ");
                 
                 
-                
+                // Hacemos otro switch para mostrar cada resultado por separado
+                // del 1 al 10
                 switch (numeroString){
                     case "1":
                         JOptionPane.showConfirmDialog(null,
@@ -77,18 +82,42 @@ public class NumerosRomanos {
                                 "El numero 10 equivale a: X");                      
                         break;    
                 }
-                     
-        if (opcion==2){
+                break;  
+            // Opcion 2 (Pedimos un nombre y contamos las vocales que tiene)
+            case 2:
+                //Pedimos un nombre y los pasamos a minuscula
+                String nombre = JOptionPane.showInputDialog(
+                        "Introduce un nombre: ").toLowerCase();//Minuscula
+                // Declaramos las variables necesarias
+                // Hacemos un while y dentro un if con las condiciones OR
+                char letra;
+                int contador = 0;
+                int i = 0;
+                while (i < nombre.length()){
+                letra = nombre.charAt(i);
+                i++;
+                if (letra == 'a' || letra == 'e' || letra == 'i' 
+                        || letra == 'o' || letra == 'u'){
+                contador++;
+               
+                    }
+                }
+                // Mostramos el resultado con JOption
+                JOptionPane.showMessageDialog(null, "El nombre tiene " + contador + " letras");
+                break;
                 
-            
-        }        
                 
              
-                JOptionPane.showConfirmDialog(null , 
-                        "Vuelve a elegir una de las opciones");
+            //default:        
+                //JOptionPane.showConfirmDialog(null , 
+                        //"Vuelve a elegir una de las opciones");
         }
         
+        }
+        // Hacemos un while para que siga en bucle siempre que marquemos un numero
+        // diferente a 3, si marcamos 3 se saldra del bucle
+        while(opcion != 3);
     }
     
-    
+        
 }

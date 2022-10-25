@@ -12,7 +12,8 @@ import java.util.Scanner;
 public class Ejer06 {
     
      public static void main(String[] args) {
- 
+         
+         // Programa que muestre unas opciones y tengas que elejir una de ellas
         Scanner entrada = new Scanner(System.in);
         int opcion;
  
@@ -40,7 +41,7 @@ public class Ejer06 {
         } 
         else  {System.out.println("Ha seleccionado terminar");
         }     
-  
+        
      }
 }
      
